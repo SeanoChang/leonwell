@@ -1,6 +1,7 @@
 import logo from "../../images/logo.jpg";
 import { useState } from "react";
-import { BiMenu } from "react-icons/bi";
+import pkg from 'react-icons/bi/index';
+const { BiMenu } = pkg;
 
 const Navbar = () => {
   // state for show navbar in smaller devices
