@@ -1,0 +1,91 @@
+---
+import ApplicationCard from "./Cards/ApplicationCard";
+---
+
+<div class="w-full p-4 flex flex-col items-center text-gray-900" id="application">
+    <h1 class="w-5/6 lg:w-3/5 2xl:w-1/2 text-4xl sm:text-6xl border-b-4 pb-6">應用領域</h1>
+    <div class="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-3 gap-8 p-8 justify-center justify-items-center items-center">
+        <ApplicationCard
+            img="https://images.unsplash.com/photo-1674578745937-c73f81bdda07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=965&q=80"
+            title="環保與水處理"
+            body="應用產業 : 民生水處理、科技業、各產業園區、鋼鐵、造船、造紙…"
+            application={[
+                "污水輸送 5%~8% 低濃度污泥水輸送 e.g.: 初沉池、二沉池",
+                "污泥輸送 8%~13% 高濃度污泥水輸送 e.g.: 濃縮污泥",
+                "周邊產業 5%~13% 脫水機高壓進料泵 e.g.: 濾布式、離心式、板框式",
+                "脫水污泥 15%以上 脫水後污泥輸送 e.g.: 濾布是、離心式、板框式",
+                "劑量加藥synthetic polymer, copolymer, ferric, hypochlorite, chemicals for pH correction e.g. lime milk",
+            ]}
+            model="適用機型: N 標準型、D計量型、M破碎機、T料斗型系列、SCT快拆式"
+            client:load
+        />
+        <ApplicationCard
+            img="https://images.unsplash.com/photo-1566221857770-508d35ee6220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            title="化學"
+            body=""
+            application={[
+                "無需潤滑、腐蝕性、不同粘度、高磨差性和剪切度敏感輸在高壓力下也能給予",
+                "流量一致送產品得到無損計量，並配合控制系統達到最高精度。",
+                "並能符合歐洲ATEX防爆設備G區和D區的最低要求及設備溫度T3和T4的要求。",
+            ]}
+            model="適用機型: N 標準型、D計量型、SCT快拆式"
+            client:load
+        />
+        <ApplicationCard
+            img="https://images.unsplash.com/photo-1504941319307-771ebfa02a51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1029&q=80"
+            title="造紙產業"
+            body=""
+            application={[
+                "造紙機: 膠和澱粉輸送計量泵",
+                "化學: 漂白劑、添加劑、助留計、色素、黏著劑",
+                "漿料: 染料、填充材、廢紙漿、木質紙漿、纖維素輸送",
+                "塗料: 塗料混合、塗料輸送",
+            ]}
+            model="適用機型: N 標準型、D計量型、M破碎機、T料斗型系列、SCT快拆式"
+            client:load
+        />
+        <ApplicationCard
+            img="https://images.unsplash.com/photo-1542044801-30d3e45ae49a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            title="紡織業"
+            body=""
+            application={[
+                "環境: 廢水、污水、污泥輸送",
+                "化學: 黏著劑、漂白劑、染料輸送",
+                "其它: 續凝劑、浸漬劑、乳膠、PTA膏、PVC膏",
+            ]}
+            model="適用機型: N 標準型、D計量型、SCT快拆式"
+            client:load
+        />
+        <ApplicationCard
+            img="https://images.unsplash.com/photo-1566927599204-d5d3142481aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            title="食品、飲料業"
+            body="由於食品和飲料製程中易滋生微生物，輸送條件必須達到高標準的衛生級標準，所以這類泵浦符合美國3-A衛生級標準、FDA和EHEDG規範，並有CIP(在線清洗)和SIP(在線滅菌)設計。"
+            application={[
+                "糖業: 結晶、果汁提取、果汁提純、果汁濃縮、果糖",
+                "乳業: 由於其粘度和性狀多變，從液態奶，奶油到固態黃油和奶酪輸送",
+                "蔬果: 在不與氧氣接觸的密閉系統內攪碎後輸送果肉和果汁於生產區靜待處理，並將大量有機廢棄物輸送至後端衛生廢棄物處理。",
+                "釀酒: 高黏度之啤酒花、酵母、香料、殘渣輸送",
+                "糖果: 凝膠軟糖、焦糖、甘草、食用顏料、巧克力、牛軋糖、乳脂軟糖",
+                "飲料: 牛奶、優酪乳、優格、燕麥飲",
+                "食品: 各類食用油、醬油、蕃茄醬、各類沾醬",
+            ]}
+            model="適用機型: N 標準型、D計量型、CS衛生級、T料斗型系列"
+            client:load
+        />
+        <ApplicationCard
+            img="https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            title="造船"
+            body=""
+            application={[
+                "廢物和廢水的處理和處置",
+                "泵送艙底水",
+                "搬運泥漿、液體泥漿",
+                "泵送鹽水",
+                "分離油/水",
+                "加載和卸載化學品和原材料",
+            ]}
+            model="適用機型: N 標準型、E直立式、SCT快拆式"
+            client:load
+        />
+    </div>
+</div>

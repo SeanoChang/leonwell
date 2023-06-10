@@ -1,0 +1,24 @@
+---
+import SectionLayout from "../layouts/SectionLayout.astro";
+import IntroCard from "./Cards/IntroCard.astro";
+---
+
+<SectionLayout title="introduction" header="公司簡介">
+    <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-start my-8">
+            <h1 class="text-2xl sm:text-3xl p-1">良偉有限公司</h1>
+            <h2 class="text-xl sm:text-2xl p-1">經銷 單軸螺旋泵浦</h2>
+            <h2 class="text-xl sm:text-2xl p-1 text-sky-600">Progressive Cavity Pumps</h2>
+            <hr class="w-full my-4 border"/>
+            <span class="sm:p-2 text-base sm:text-xl">
+                我們秉持著讓客戶信賴的不平凡為優先，來實現替客戶解決難以輸送流體、低流動性產品達到輸送的平凡目標來服務各位客戶，良偉也會持續引進相關專業設備來服務客戶。
+            </span>
+        </div>
+        <div class="flex flex-col p-2 lg:grid lg:grid-cols-2 lg:gap-2">
+            <IntroCard title="多領域適用" body="產品更多領域適用如環保產業、食品、飲料、石油、天然氣、石化、紙漿、造紙工業、化工、生物科技含許多其他產業。"/>
+            <IntroCard title="50年生產經驗" body="我們更相信以騎進50年生產公藝下有足夠經驗來替客戶處理輸送上遇到的各類問題，而產品更適合汙水處理周邊需要高壓力的周邊設備"/>
+            <IntroCard title="高製程要求" body="更以專門處理高年度、不意流動、含故物高級部會影響分子結構的高製程要求的設計。"/>
+            <IntroCard title="德國工藝" body="經銷的是專精於製造單軸螺旋泵浦(Progressive Cavity Pumps)且具有研發新產品的一間德國公司。"/>
+        </div>
+    </div>
+</SectionLayout>
