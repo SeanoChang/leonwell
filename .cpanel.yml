@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dijsutpm/public_html/
-    - /bin/cp -R .vscode $DEPLOYPATH
-    - /bin/cp -R src $DEPLOYPATH
-    - /bin/cp -R public $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
