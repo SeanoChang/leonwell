@@ -9,7 +9,4 @@ deployment:
     - /bin/cp -R images $DEPLOYPATH
     /bin/cp -R tailwind.config.js $DEPLOYPATH
     /bin/cp -R tsconfig.json $DEPLOYPATH
-    /bin/cp -R $DEPLOYPATH
-    /bin/cp -R $DEPLOYPATH
-    /bin/cp -R $DEPLOYPATH
-    /bin/cp -R $DEPLOYPATH
+    /bin/cp -R astro.config.mjs $DEPLOYPATH
