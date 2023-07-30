@@ -1,7 +1,3 @@
-import { HiOutlineMail } from "react-icons/hi";
-import { FiMessageCircle } from "react-icons/fi";
-import { MdPhone } from "react-icons/md";
-
 const Footer = () => {
   return (
     <footer className="bg-gray-50 p-4" id="contact">
@@ -18,13 +14,13 @@ const Footer = () => {
             <p className="mr-4 text-2xl font-semibold">聯絡我們:</p>
           </li>
           <li className="flex flex-row items-center justify-center">
-            <MdPhone className="mr-1 text-xl" />
+            <img src="/images/phone.png" className="w-6 mr-1" />
             <a href="tel:88636683597" className="mr-4 hover:underline md:mr-6">
               +886 3 668 3597
             </a>
           </li>
           <li className="flex flex-row items-center justify-center">
-            <HiOutlineMail className="mr-1 text-xl" />
+            <img src="/images/mail.png" className="w-6 mr-1" />
             <a
               href="mailto:info.5130@leonwell.com?subject=Feedback&body=Tell us anything..."
               className="mr-4 hover:underline md:mr-6"
@@ -33,7 +29,7 @@ const Footer = () => {
             </a>
           </li>
           <li className="flex flex-row items-center justify-center">
-            <FiMessageCircle className="mr-1 text-xl" />
+            <img src="/images/message.png" className="w-6 mr-1" />
             <a
               href="https://line.me/ti/p/@pump666"
               target="_blank"
