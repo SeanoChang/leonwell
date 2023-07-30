@@ -1,6 +1,6 @@
 import { HiOutlineMail } from "react-icons/hi";
 import { BiMessageRounded } from "react-icons/bi";
-import { BsTelephone } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
   return (
