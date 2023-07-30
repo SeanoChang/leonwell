@@ -1,6 +1,6 @@
 import { HiOutlineMail } from "react-icons/hi";
 import { BiMessageRounded } from "react-icons/bi";
-import { AiOutlinePhone } from "react-icons/ai";
+import { BsTelephone } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="mr-4 text-2xl font-semibold">聯絡我們:</p>
           </li>
           <li className="flex flex-row items-center justify-center">
-            <AiOutlinePhone className="mr-1 text-xl" />
+            <BsTelephone className="mr-1 text-xl" />
             <a href="tel:88636683597" className="mr-4 hover:underline md:mr-6">
               +886 3 668 3597
             </a>
