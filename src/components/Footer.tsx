@@ -1,5 +1,5 @@
 import { HiOutlineMail } from "react-icons/hi";
-import { BiMessageRounded } from "react-icons/bi";
+import { FiMessageCircle } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
@@ -33,7 +33,7 @@ const Footer = () => {
             </a>
           </li>
           <li className="flex flex-row items-center justify-center">
-            <BiMessageRounded className="mr-1 text-xl" />
+            <FiMessageCircle className="mr-1 text-xl" />
             <a
               href="https://line.me/ti/p/@pump666"
               target="_blank"
