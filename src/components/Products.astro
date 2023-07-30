@@ -4,9 +4,8 @@ import SectionLayout from "../layouts/SectionLayout.astro";
 import t_pump from "../../images/T_Pump.jpg";
 import d_pump from "../../images/D_pump.png";
 import n_pump from "../../images/N_pump.png";
-import spx_pump from "../../images/SPX_pump.png";
-import sct1_pump from "../../images/SCT_1_pump.png";
-import sct2_pump from "../../images/SCT_2_pump.jpg";
+import e_pump from "../../images/E_pump.png";
+import spx_pump from "../../images/CS_pump.png";
 ---
 
 <SectionLayout title="product" header="產品類別">
@@ -14,7 +13,7 @@ import sct2_pump from "../../images/SCT_2_pump.jpg";
         class="flex flex-col justify-center items-center md:grid md:grid-cols-2 md:gap-4 my-4 justify-items-center"
     >
         <ProductCard
-            img={t_pump}
+            img={n_pump}
             title="N 標準型"
             body="幾乎適用於所有行業，用來輸送各種粘度範圍及不同含固率的介質。"
             specs={["流量範圍 : 30 L/H ~ 500 M3/H", "最大持壓 : 48 bar"]}
@@ -25,32 +24,6 @@ import sct2_pump from "../../images/SCT_2_pump.jpg";
                 "具有多種安裝方式",
                 "可通過大粒徑固體",
                 "泵的輸送方向可逆轉",
-            ]}
-            client:load
-        />
-        <ProductCard
-            img={d_pump}
-            title="D 計量型"
-            body="低脈衝且配合相關控制設定精確度可達±1%，廣泛用於粘度範圍從低到高，不同含固率以及腐蝕性介質的計量輸送。"
-            specs={["流量範圍 : 20L/H ~ 1,000 L/H", "最大持壓 : 24 bar"]}
-            features={[
-                "模組化設計，零件更換方便",
-                "高精度計量(誤差範圍±1%)",
-                "插入式連接，維護便利",
-                "材質可依客戶需求設定，適用所有輸送介質",
-                "可提供多種驅動控制組合",
-            ]}
-            client:load
-        />
-        <ProductCard
-            img={n_pump}
-            title="E 直立型"
-            body="用於罐體、池體及桶體等容積體的排空。適用包括各類具有磨蝕性、腐蝕性之介質並且粘度範圍從低到高的物料。根據客戶實體設計篩選不同的尺寸和設計，易於維護，運營成本低。直立式泵不會有其它方案軸封經常發生異常的問題。"
-            specs={["流量範圍 : 30L/H ~ 300 M3/H", "最大持壓 : 12 bar"]}
-            features={[
-                "脈衝低，流量均勻",
-                "泵浸入深度依據客戶要求設計定制",
-                "高NPSH值(汽蝕餘量)",
             ]}
             client:load
         />
@@ -72,27 +45,41 @@ import sct2_pump from "../../images/SCT_2_pump.jpg";
             client:load
         />
         <ProductCard
-            img={sct2_pump}
-            title="M 破碎機"
-            body="用於破碎切割流體中的固體和纖維組分。介質經過破碎切割機處理後，系統運行安全性得以提高，系統設備使用壽命得以延長，降低維護成本。國外已經廣泛成功運用在市政及工業污水處理及各個行業製程。"
-            specs="流量範圍 : 2 M3/H ~ 130 M3/H"
+            img={d_pump}
+            title="D 計量型"
+            body="計量泵 低脈衝且配合相關控制設定精確度可達±1％，廣泛用於粘度範圍從低到高，不同含固率以及腐蝕性介質的計量輸送。"
+            specs={["流量範圍 : 20L/H ~ 1,000 L/H", "最大持壓 : 24 bar"]}
             features={[
-                "透過轉速調整和刀盤設計達到不同破碎、切割效果",
-                "刀盤總成更換簡單，維護方便",
-                "處理量可用調節流量、輸出轉速和更換刀盤規格來控制",
-                "以設計上技術達到低耗能",
+                "模組化設計，零件更換方便",
+                "高精度計量(誤差範圍±1%)",
+                "插入式連接，維護便利",
+                "材質可依客戶需求設定，適用所有輸送介質",
+                "可提供多種驅動控制組合",
             ]}
             client:load
         />
         <ProductCard
-            img={sct1_pump}
-            title="W 簡易泵"
-            body="在很多行業應用，高效輸送各種不同粘度的甚至高含固率的流體。它是標準泵的簡化版，有別於傳統螺桿泵它的結構更緊湊，所以比較經濟。"
-            specs={["流量範圍 : 10 M3/H", "最大持壓 : 4 bar"]}
+            img={t_pump}
+            title="T 料斗型"
+            body="SEEPEX開口進料斗泵浦的進料斗與螺旋進料螺桿可以進行產品供料作業。螺旋間距與直徑可以根據作業條件調整，達到最佳進料率。進料斗可以客製滿足多種不同作業條件。它們適合農業、生質氣體、釀造與蒸餾、陶瓷業、甜食、建築業、糕餅與奶油填料、染料、顏料與清漆、電鍍、魚隻處理、蔬果加工、藥品、化妝品、肉類加工、製油、液態天然氣、石化業、造船、汙泥脫水與處理、廢水處理、紙板、紡織、木材處理、膠水、黏著劑、膠泥及酒廠等許多用途。"
+            specs={["流量範圍 : 50L/H ~ 500 M3/H", "最大持壓 : 31 bar (32~48 bar為特殊設計)", "固形物量: 9% ~ 45% (含水率:91% ~ 55%)"]}
             features={[
-                "轉動部件只有一個萬向節",
-                "結構簡潔，維護方便經濟高效",
-                "模組式結構緊湊，驅動安裝法蘭式，節省空間",
+                "如需剪切適合BTM系列",
+                "如需攪拌輔助適合BTH系列",
+                "料斗和壓縮區都有輔助進料口",
+                "優化拆卸輔助新型設計",
+            ]}
+            client:load
+        />
+        <ProductCard
+            img={e_pump}
+            title="E 直立型"
+            body="直立型 用於罐體、池體及桶體等容積體的排空。適用包括各類具有磨蝕性、腐蝕性之介質並且粘度範圍從低到高的物料。根據客戶實體設計篩選不同的尺寸和設計，易於維護，運營成本低。直立式泵不會有其它方案軸封經常發生異常的問題。"
+            specs={["流量範圍 : 30L/H ~ 300 M3/H", "最大持壓 : 12 bar"]}
+            features={[
+                "脈衝低，流量均勻",
+                "泵浸入深度依據客戶要求設計定制",
+                "高NPSH值(汽蝕餘量)",
             ]}
             client:load
         />

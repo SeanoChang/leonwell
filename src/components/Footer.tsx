@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { HiOutlineMail } from "react-icons/hi";
+import { BiMessageRounded } from "react-icons/bi";
+import { AiOutlinePhone } from "react-icons/ai";
 
 const Footer = () => {
-  // state for en or cn address
-  const [address, setAddress] = useState(true);
-
   return (
     <footer className="bg-gray-50 p-4" id="contact">
       <div className="w-full mx-auto max-w-screen-xl p-5 bg-slate-200 rounded-lg shadow-md shadow-gray-300 md:flex md:items-center md:justify-between">
@@ -14,18 +13,18 @@ const Footer = () => {
           </a>
           .
         </span>
-        <ul className="flex flex-row flex-wrap items-center mt-3 text-xs sm:text-base font-medium text-gray-800 sm:mt-0">
-          <li className="mr-4 block sm:inline-block md:mr-6 hover:underline hover:cursor-pointer" onClick={() => setAddress(!address)}>
-            {address
-              ? "310021 新竹縣竹東鎮員山路266-2號"
-              : "No.266-2, Yuanshan Rd., Zhudong Township, Hsinchu County 310021, Taiwan (R.O.C.)"}
-          </li>
+        <ul className="flex flex-row flex-wrap items-center mt-3 sm:mt-0 text-xs sm:text-base font-medium text-gray-800 ">
           <li>
+            <p className="mr-4 text-2xl font-semibold">聯絡我們:</p>
+          </li>
+          <li className="flex flex-row items-center justify-center">
+            <AiOutlinePhone className="mr-1 text-xl" />
             <a href="tel:88636683597" className="mr-4 hover:underline md:mr-6">
               +886 3 668 3597
             </a>
           </li>
-          <li>
+          <li className="flex flex-row items-center justify-center">
+            <HiOutlineMail className="mr-1 text-xl" />
             <a
               href="mailto:info.5130@leonwell.com?subject=Feedback&body=Tell us anything..."
               className="mr-4 hover:underline md:mr-6"
@@ -33,7 +32,8 @@ const Footer = () => {
               Email
             </a>
           </li>
-          <li>
+          <li className="flex flex-row items-center justify-center">
+            <BiMessageRounded className="mr-1 text-xl" />
             <a
               href="https://line.me/ti/p/@pump666"
               target="_blank"

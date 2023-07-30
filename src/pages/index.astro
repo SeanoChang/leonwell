@@ -1,33 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import Intro from '../components/Intro.astro';
-import Products from '../components/Products.astro';
-import Application from '../components/Application.astro';
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Intro from "../components/Intro.astro";
+import Products from "../components/Products.astro";
+import Application from "../components/Application.astro";
 ---
 
 <Layout title="Leonwell">
-	<main class="flex flex-col justify-center items-center bg-gray-50" id="home">
-		<Navbar client:load/>
-		<div class="img h-auto object-cover">
-			<img src="https://images.unsplash.com/photo-1506512208778-95bdc010f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80" alt="machine">
-		</div>
-		<Intro />
-		<Products />
-		<Application />
-	</main>
-	<Footer client:load/>
+  <main class="flex flex-col justify-center items-center bg-gray-50" id="home">
+    <Navbar client:load />
+    <div class="img">
+      <img
+        class="object-cover object-center h-auto max-h-[30vh]"
+        src="https://images.unsplash.com/photo-1506512208778-95bdc010f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80"
+        alt="machine"
+      />
+    </div>
+    <Intro />
+    <Products />
+    <Application />
+  </main>
+  <Footer client:load />
 </Layout>
 
 <style>
-	.img {
-		width: 100vw;
-		height: 30vh;
-		overflow: hidden;
-	}
+  .img {
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+  }
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 </style>

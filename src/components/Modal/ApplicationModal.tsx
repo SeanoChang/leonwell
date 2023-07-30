@@ -3,7 +3,6 @@ const ApplicationModal = (props: {
   title: string;
   body: string;
   application: string[] | string;
-  model: string;
   setShowModal: (showModal: boolean) => void;
   showModal: boolean;
 }) => {
@@ -11,7 +10,7 @@ const ApplicationModal = (props: {
         <div className="fixed top-0 left-0 z-50 w-[100vw] h-[100vh] bg-gray-400/50 flex flex-col justify-center items-center"
             onClick={() => props.setShowModal(!props.showModal)}
         >
-          <div className="bg-slate-50 flex flex-col justify-around items-start drop-shadow-xl rounded-lg p-4 sm:p-8 w-[90vw] md:w-[70vw] xl:w-[50vw] max-h-[70vh]">
+          <div className="bg-slate-50 flex flex-col justify-around items-start drop-shadow-xl rounded-lg p-4 sm:p-8 w-[90vw] md:w-[70vw] xl:w-[50vw] max-h-[70vh] overflow-scroll">
             <h5 className="mb-2 text-xl sm:text-3xl font-semibold tracking-tight text-gray-900">
               {props.title}
             </h5>
@@ -27,7 +26,6 @@ const ApplicationModal = (props: {
                 </p>
               ))
             )}
-            <p className="font-semibold text-gray-900 text-sm sm:text-lg">{props.model}</p>
           </div>
         </div>
       );
